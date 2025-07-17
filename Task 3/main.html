@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Third Assignment</title>
+    <style>
+      body{
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      fieldset{
+         background-color: #4051be;
+         color: white;
+         padding: 16px;
+         margin: 5px;
+      }
+      fieldset.mainSection{
+        border: none;
+      }
+      fieldset.section{
+        background-color: rgb(228, 67, 67);
+        margin-bottom: 80px;
+        padding: 12px;
+      }
+      legend{
+       background-color: red; 
+      }
+      legend.title{
+        background-color: rgb(16, 16, 136);
+        padding: 16px 0px;
+        margin: 24px 0px;
+      }
+      label{
+        display: inline-block;
+        margin: 5px 0px;
+        width: 112px;
+      }
+      select{
+        margin-top: 304px;
+        margin-bottom: 16px;
+      }
+      button{
+        background-color: rgb(228, 67, 67) ;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    
+     <fieldset class="mainSection">
+      <form action="/submit-form" method="post"></form>
+        <legend>Personal Data</legend>
+
+        <fieldset class="section">
+         <legend class="title">Your Name</legend> 
+         <div>
+          <label for="name">FirstName </label> : 
+          <input type="text" id="firstName" placeholder="ex Monica" required><br>
+          
+          <label for="name">LastName  </label> :
+          <input type="text" id="lastName" placeholder="ex Maged" required> 
+         </div>
+        </fieldset>
+
+         <label for="phoneNumber">Your-Phone  </label>:
+         <input type="number" id="phone" required> <br>
+
+         <label for="email">Email  </label>:
+         <input type="email" id="email" required> <br>
+
+         <label for="password">Password  :</label>:
+         <input type="password" id="password" required> <br>
+
+         <label for="repassword">Re-Password  </label>:
+         <input type="repassword" id="repassword" required> <br><br>
+
+         <Select name="city">
+            <optgroup label="Egypt">
+              <option selected value="Cairo">Cairo </option>
+              <option  value="Alexandria">Alexandria </option>
+              <option  value="Mansoura">Mansoura </option>
+            </optgroup>
+            <optgroup label="UEA">
+              <option  value="Abu Dhabi">Abu Dhabi </option>
+              <option  value="Ajman">Ajman </option>
+              <option  value="Sharjah">Sharjah </option>
+            </optgroup>
+            <optgroup label="Saudi Arabia">
+              <option  value="Riyadh">Riyadh </option>
+              <option  value="Jaddah">Jaddah </option>
+              <option  value="Dammam">Dammam </option>
+            </optgroup>
+         </Select>
+         <br>
+         <button for="submit">SUBMIT</button>
+        </form> 
+      </fieldset>
+    
+      
+
+ 
+  </body>
+</html>
