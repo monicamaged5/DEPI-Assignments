@@ -1,0 +1,193 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Segoe UI';
+}
+.title{
+  position:relative;
+  font-size: 54px;
+  font-weight: bold;
+  color: rgba(136, 135, 135, 0.1);
+}
+.main-title{
+  position: absolute;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  left: 47% ;
+  top:30px;
+}
+
+.main-title .line{
+  content: "";
+  position: absolute;
+  bottom: 1;
+  right: 22px;
+  width: 25px;
+  height: 0.5px;
+  background-color: #3cb9a0;
+}
+
+.sec-resume{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-bottom:150px ;
+}
+
+.info-con{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+ h3{
+  text-align: left;
+}
+
+.edu-info .info, .experience-info .info{
+  height: 140px;
+  width: 400px;
+  text-align: left;
+  border: 1px solid rgb(203, 201, 201);
+  border-radius:8px ;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.time{
+background-color: #3cb9a0;
+color: white;
+font-size: 12px;
+width: 70px;
+padding: 2px;
+border-radius:4px ;
+text-align: center;
+}
+
+.field{
+  font-weight: 600;
+  font-size: 16px;
+}
+.place{
+  color: red;
+  font-size: 14px;
+}
+.details{
+  font-size: 14px;
+  color: rgb(96, 97, 98);
+}
+
+.skills-con{
+  display:flex;
+  flex-direction:column ;
+  margin: 0 19%;
+
+}
+.skills-info{
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.heading-left{
+    width: 450px;
+}
+
+.bar{
+  position: relative;
+  content: "";
+  background-color: #eff0ef;
+  width: 420px;
+  height: 10px;
+  border-radius: 4px;
+}
+
+.fill{
+  width: 200px;
+  position: absolute;
+  height: 10px;
+  background-color:#3cb9a0 ;
+  border-radius: 4px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top:50px ;
+  margin-left: 38%;
+  width: 150px;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 2px dashed #000;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+}
+
+
+.option-bar{
+  margin: 40px 0 30px;
+}
+
+.option-bar ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.option-bar span {
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.option-bar span.active {
+  color: #3cb9a0; 
+}
+
+.option-bar span.active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 42px;
+  height: 0.5px;
+  background-color: #3cb9a0;
+}
+
+.sec-portfolio{
+  width: 100%;
+  padding-top: 40px;
+  background-color: rgb(244, 242, 242);
+  text-align: center;
+}
+
+.portfolio-sample{
+  width: 530px;
+  height: 500px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 170px 170px 170px ;
+  grid-template-rows: 115px 130px 115px ;
+  gap: 10px;
+}
+
+.portfolio-sample img{
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-sample div:nth-child(2), .portfolio-sample div:nth-child(4){
+  grid-area: span 2;
+} 
